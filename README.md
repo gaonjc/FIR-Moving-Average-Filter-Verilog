@@ -20,3 +20,4 @@
 # Same Filter Testbenched with 8 times the Noise (3rd Order) ![Testbench 3rd Order MAF](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/img/8xnoisetestbench3rdorder.png)
 ## With 8 times the noise the 3 D Flip-Flops have a hard time smoothing it out so here is the implementation for a 7th order moving average filter. Verilog [*here*](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/Verilog/fir_moving_avg_filter_7thorder.v)
 # A 7th Order Filter Testbenched with 8 times the Noise (7th Order) ![Testbench 3rd Order MAF](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/img/8xnoisetest7thorder.png)
+## The signal is smoother with more delays but the output signal is also delayed by 4 more clock cycles than the 3rd order filter, but with only 8 Flip Flops if implemented physically 8 clock cycles is miniscule.
