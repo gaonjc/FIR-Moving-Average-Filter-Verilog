@@ -16,3 +16,5 @@
 # The test bench file can be found [*here*](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/Verilog/fir_moving_avg_filter_tb.v)
 # Analog Signal in Signed Decimal Testbench 3rd Order MAF ![Testbench 3rd Order MAF](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/img/3rdordertestbench.png)
 ## The delay on the output filtered signal is noticible even though there are only 3 delays however the signal is slightly more smooth
+# Same Filter Testbenched with twice the Noise (3rd Order) ![Testbench 3rd Order MAF](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/img/3rdorder_x2noisetestbench.png)
+# Same Filter Testbenched with 8 times the Noise (3rd Order) ![Testbench 3rd Order MAF](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/img/8xnoisetestbench3rdorder.png)
