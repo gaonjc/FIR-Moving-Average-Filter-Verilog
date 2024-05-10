@@ -39,23 +39,23 @@ module fir_moving_avg_filter_tb(
     
     
     
-    // input sine wave data
+    // input sine wave data from mem file
     initial
     $readmemb("noisy8.mem", RAM);
     
     // Create the RAM
     reg [N-1:0] RAM [31:0]; 
     
-    // create a clock
+    // create a clock in tb
     initial 
     begin
     reset_n=1'b1;
     clk = 0;
     end
     always 
-    #2 clk = ~ clk;  
+    #2 clk = ~ clk;  //2 ns period
     
-    // Read RAMM data and give to design
+    // Read RAM data and give to filter
     always@(posedge clk)
         noisy <= RAM[Address]; 
         
@@ -63,7 +63,7 @@ module fir_moving_avg_filter_tb(
     reg [4:0] Address; 
     initial
     Address = 0; 
-    always@(posedge clk)
+    always@(posedge clk) //cycle Address to duplicate sin wave
     begin
         if (Address == 31)
             Address = 0; 
