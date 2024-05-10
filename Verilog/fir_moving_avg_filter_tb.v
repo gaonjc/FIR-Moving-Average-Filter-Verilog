@@ -39,7 +39,7 @@ module fir_moving_avg_filter_tb(
     
     
     
-    // input sine wave data from mem file
+    // input sin wave data from mem file
     initial
     $readmemb("noisy8.mem", RAM);
     
