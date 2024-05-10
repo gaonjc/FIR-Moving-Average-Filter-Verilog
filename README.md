@@ -14,5 +14,5 @@
 # The top Verilog module can be found [*here*](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/Verilog/fir_moving_avg_filter.v)
 ## The noisy signal is made up of 32 16 bit samples when are then imported into vivado as a memory file and stored into RAM in the testbench once every clock cycle
 # The test bench file can be found [*here*](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/Verilog/fir_moving_avg_filter_tb.v)
-# Signed decimal and analog signal ![Testbench 3rd Order MAF](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/img/3rdordertestbench.png)
+# Analog Signal in Signed Decimal ![Testbench 3rd Order MAF](https://github.com/gaonjc/FIR-Moving-Average-Filter-Verilog/blob/main/img/3rdordertestbench.png)
 ## The delay on the output filtered signal is noticible even though there are only 3 delays however the signal is slightly more smooth
