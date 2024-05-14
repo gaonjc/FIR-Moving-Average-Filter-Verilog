@@ -38,7 +38,7 @@ ylabel('\bf Amplitude');
 title('\bf Sine wave + Noise');
 
 % Convert from real to integers
-total_wordlength = 16; % 8 bits
+total_wordlength = 16; % 16 bits
 scaling = 7; %scaling factor
 sine_noise_integers = round(sine_norm.*(2^scaling)); %converts normalized signal into scaled int by mult by 2^7
 figure();plot(1:length(sine_noise_integers), sine_noise_integers); %plots scaled int representation 
